@@ -1,0 +1,36 @@
+###########################
+# UaModeler Project File  #
+# Generated at 21.09.2025 #
+###########################
+
+PROJECTNAME = TemperatureUAServer
+
+TEMPLATESET = ($TEMPLATES)/net/v4_2/t4/net_server.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    temperatureuaserver.ua
+
+VARIABLES+= temperatureuaserver.ua: Namespace=Kraftcoding; Organization=Kraftcoding; 
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    temperatureuaserver.ua: #008000
+
+PROJECTVARIABLES += GenerateDefaultApplication = true \
+    LegacyOutput = false \
+    NetFramework = 4.6.2 \
+    NoMethodFiles = false \
+    ProjectNamespace = TemperatureUAServer \
+    ProjectOrganization = Kraftcoding \
+    PubSubMqttJson = false \
+    RolesAndUsers = false
+
+OUTPUTPATH = output
+
+GENERATE += temperatureuaserver.ua
+
+NODEACCESSINFOROLES += Administrator \
+    SecurityAdmin \
+    ConfigurationAdmin \
+    Operator \
+    Observer
+

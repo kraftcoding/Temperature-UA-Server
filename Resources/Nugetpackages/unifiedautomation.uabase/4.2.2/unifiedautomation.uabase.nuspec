@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>UnifiedAutomation.UaBase</id>
+    <version>4.2.2</version>
+    <title>UnifiedAutomation UaBase Library (EVAL)</title>
+    <authors>Unified Automation GmbH</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">license\UnifiedAutomation_Software_License_Agreement.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>images\unified_eval.png</icon>
+    <projectUrl>http://documentation.unified-automation.com/uasdkdotnet/4.2.2/html/index.html</projectUrl>
+    <description>Unified Automation OPC UA SDK Base Library (EVAL)</description>
+    <language>en-US</language>
+    <tags>Unified Automation OPC-UA netstandard ios linux dotnet net netcore</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2" />
+      <group targetFramework=".NETFramework4.8" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Configuration.ConfigurationManager" version="6.0.0" />
+      </group>
+      <group targetFramework="net6.0">
+        <dependency id="System.Configuration.ConfigurationManager" version="6.0.0" />
+      </group>
+      <group targetFramework="net8.0">
+        <dependency id="System.Configuration.ConfigurationManager" version="6.0.0" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

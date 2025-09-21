@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net462</TargetFrameworks>
+    <AssemblyName>Kraftcoding.TemperatureUAServer</AssemblyName>
+    <RootNamespace>Kraftcoding.TemperatureUAServer</RootNamespace>
+    <Copyright>Copyright (c) Unified Automation GmbH 2011-2025</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="NodeSets/temperatureuaserver.xml" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net462' ">
+    <PackageReference Include="UnifiedAutomation.UaBase" Version="4.2.2" />
+    <PackageReference Include="UnifiedAutomation.UaBase.Windows" Version="4.2.2" />
+    <PackageReference Include="UnifiedAutomation.UaServer" Version="4.2.2" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://Kraftcoding.org/TemperatureUAServer/Types.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <NamespaceUris>
+        <Uri>http://Kraftcoding.org/TemperatureUAServer/</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://Kraftcoding.org/TemperatureUAServer/" PublicationDate="2025-09-21T15:28:47Z" Version="1.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2025-06-30T00:00:00Z" Version="1.05.05"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Float">i=10</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="Guid">i=14</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="IdType">i=256</Alias>
+        <Alias Alias="NumericRange">i=291</Alias>
+        <Alias Alias="NormalizedString">i=12877</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <ua:ModelInfo Hash="6t37iBwht6ol1jaAXFuJFg==" Tool="UaModeler" Version="1.8.1"/>
+        </Extension>
+    </Extensions>
+    <UAObject SymbolicName="http___Kraftcoding_org_TemperatureUAServer_" NodeId="ns=1;i=5004" BrowseName="1:http://Kraftcoding.org/TemperatureUAServer/">
+        <DisplayName>http://Kraftcoding.org/TemperatureUAServer/</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6013</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6014</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6015</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6016</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6019</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=6013" ParentNodeId="ns=1;i=5004" BrowseName="IsNamespaceSubset">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=6014" ParentNodeId="ns=1;i=5004" BrowseName="NamespacePublicationDate">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2025-09-21T15:28:47Z</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6015" ParentNodeId="ns=1;i=5004" BrowseName="NamespaceUri">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:String>http://Kraftcoding.org/TemperatureUAServer/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6016" ParentNodeId="ns=1;i=5004" BrowseName="NamespaceVersion">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:String>1.0.0</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="IdType" ValueRank="1" NodeId="ns=1;i=6017" ParentNodeId="ns=1;i=5004" ArrayDimensions="0" BrowseName="StaticNodeIdTypes">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:ListOfInt32/>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="NumericRange" ValueRank="1" NodeId="ns=1;i=6018" ParentNodeId="ns=1;i=5004" ArrayDimensions="0" BrowseName="StaticNumericNodeIdRange">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:ListOfString/>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6019" ParentNodeId="ns=1;i=5004" BrowseName="StaticStringNodeIdPattern">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5004</Reference>
+        </References>
+        <Value>
+            <uax:String></uax:String>
+        </Value>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=5003" BrowseName="1:TempServer">
+        <DisplayName>TempServer</DisplayName>
+        <Description>Temperature server for testing</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=6006</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=6009</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=6012</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=6003</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Guid" NodeId="ns=1;i=6006" BrowseName="1:Serial">
+        <DisplayName>Serial</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+        <Value>
+            <uax:Guid>
+                <uax:String>c5cb5598-5eaf-4e06-94ea-fb302d513c81</uax:String>
+            </uax:Guid>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=6009" AccessLevel="3" BrowseName="1:TempSensor1">
+        <DisplayName>TempSensor1</DisplayName>
+        <Description>Sensor temperature device one</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=6012" AccessLevel="3" BrowseName="1:TempSensor2">
+        <DisplayName>TempSensor2</DisplayName>
+        <Description>Sensor temperature device two</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="NormalizedString" NodeId="ns=1;i=6003" BrowseName="1:Vendor">
+        <DisplayName>Vendor</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5003</Reference>
+        </References>
+        <Value>
+            <uax:String>King Sensor</uax:String>
+        </Value>
+    </UAVariable>
+</UANodeSet>
